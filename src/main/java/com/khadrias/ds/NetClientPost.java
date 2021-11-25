@@ -27,8 +27,7 @@ public class NetClientPost {
 			params.put("grant_type", "client_credentials");
 
 			String urlParameters = getDataString(params);
-			URL url = new URL(
-					"https://login.microsoftonline.com/oauth2/v2.0/token");
+			URL url = new URL("https://login.microsoftonline.com/oauth2/v2.0/token");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setDoOutput(true);
 			conn.setRequestMethod("POST");

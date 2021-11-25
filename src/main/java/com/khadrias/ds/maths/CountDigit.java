@@ -7,10 +7,10 @@ public class CountDigit {
 	}
 
 	public static int countDigit(long number) {
-		int count=0;
-		while(number>0) {
+		int count = 0;
+		while (number > 0) {
 			count++;
-			number/=10;
+			number /= 10;
 		}
 		return count;
 	}
