@@ -16,6 +16,7 @@ public class LCM {
 		}
 	}
 	
+	//o(log(min(i,j)))
 	public static int findLCMByGCD(int i, int j) {
 		return i*j*GCDEuclidenAlgo.findGCDOptimized(i, j);
 	}

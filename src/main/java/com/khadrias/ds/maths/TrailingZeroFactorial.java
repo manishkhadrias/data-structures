@@ -6,6 +6,7 @@ public class TrailingZeroFactorial {
 		System.out.println(countTrailingZerosOfFactorial(25));
 	}
 
+	//o(log base 5 (n))
 	public static int countTrailingZerosOfFactorial(int number) {
 		int res = 0;
 		for (int i = 5; i <= number; i = i * 5) {
