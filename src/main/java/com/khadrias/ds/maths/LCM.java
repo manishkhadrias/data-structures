@@ -15,10 +15,10 @@ public class LCM {
 			res++;
 		}
 	}
-	
-	//o(log(min(i,j)))
+
+	// o(log(min(i,j)))
 	public static int findLCMByGCD(int i, int j) {
-		return i*j*GCDEuclidenAlgo.findGCDOptimized(i, j);
+		return i * j * GCDEuclidenAlgo.findGCDOptimized(i, j);
 	}
 
 }

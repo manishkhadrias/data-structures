@@ -7,7 +7,7 @@ public class GCDEuclidenAlgo {
 	}
 
 	public static int findGCD(int i, int j) {
-		
+
 		while (i != j) {
 			if (i > j)
 				i = i - j;
@@ -18,7 +18,7 @@ public class GCDEuclidenAlgo {
 		return i;
 	}
 
-	//o(log(min(i,j)))
+	// o(log(min(i,j)))
 	public static int findGCDOptimized(int i, int j) {
 		if (j == 0)
 			return i;

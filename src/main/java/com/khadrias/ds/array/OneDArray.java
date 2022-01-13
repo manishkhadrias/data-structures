@@ -35,7 +35,7 @@ public class OneDArray {
 		Integer[] integers = new Integer[] { 1, 2, 3, 4, 5 };
 		List<Integer> list21 = Arrays.asList(integers); // returns a fixed-size list backed by the specified array.
 		List<Integer> list22 = new ArrayList<>(Arrays.asList(integers)); // good
-		list21.add(5); // java.lang.UnsupportedOperationException
+		// list21.add(5); // java.lang.UnsupportedOperationException
 		list22.add(6);
 
 		// The method println(char[]) is ambiguous for the type PrintStream

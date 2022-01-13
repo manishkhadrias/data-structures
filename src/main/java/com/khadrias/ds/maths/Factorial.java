@@ -6,7 +6,7 @@ public class Factorial {
 		System.out.println(factorial(20));
 	}
 
-	//o(n)
+	// o(n)
 	private static long factorial(int number) {
 		long res = 1;
 		while (number > 1) {

@@ -6,7 +6,7 @@ public class CountDigit {
 		System.out.println(countDigit(1989787667));
 	}
 
-	//o(n)
+	// o(n)
 	public static int countDigit(long number) {
 		int count = 0;
 		while (number > 0) {

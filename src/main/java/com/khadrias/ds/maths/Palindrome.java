@@ -6,7 +6,7 @@ public class Palindrome {
 		System.out.println(palindrome(String.valueOf(1112111)));
 	}
 
-	//o(n/2)
+	// o(n/2)
 	public static boolean palindrome(String str) {
 		for (int i = 0; i < str.length() / 2; i++) {
 			if (str.charAt(i) != str.charAt(str.length() - 1 - i)) {

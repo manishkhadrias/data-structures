@@ -6,7 +6,7 @@ public class GCD {
 		System.out.println("Greatest Common Divisor: " + findGCD(15, 35));
 	}
 
-	//o(n)
+	// o(n)
 	public static int findGCD(int i, int j) {
 		int res = Math.min(i, j);
 		while (res > 0) {

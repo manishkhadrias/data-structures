@@ -7,7 +7,7 @@ public class Prime {
 		System.out.println("Greatest Common Divisor: " + isPrimeOptimized(37));
 	}
 
-	//o(n)
+	// o(n)
 	public static boolean isPrime(int number) {
 		if (number == 1)
 			return false;
@@ -16,11 +16,12 @@ public class Prime {
 				return false;
 		return true;
 	}
-	//o(square root of n)
+
+	// o(square root of n)
 	public static boolean isPrimeOptimized(int number) {
 		if (number == 1)
 			return false;
-		for (int i = 2; i*i <= number; i++)
+		for (int i = 2; i * i <= number; i++)
 			if (number % i == 0)
 				return false;
 		return true;

@@ -3,9 +3,7 @@
  */
 package com.khadrias.ds.array;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.stream.Collectors;
 
@@ -55,29 +53,30 @@ public class LCS {
 			set.add(i);
 
 		int longestSequenceLength = 0;
-		String lcs = "";
-		HashMap<Integer, ArrayList<String>> map = new HashMap<>();
+//		String lcs = "";
+//		HashMap<Integer, ArrayList<String>> map = new HashMap<>();
 		for (int num : nums) {
 			if (!set.contains(num - 1)) {
 				int length = 1;
-				lcs = "" + num;
+//				lcs = "" + num;
 
 				while (set.contains(++num)) {
 					length++;
-					lcs += " " + num;
+//					lcs += " " + num;
 				}
 				longestSequenceLength = Math.max(longestSequenceLength, length);
-				ArrayList<String> list;
-				if (map.containsKey(length)) {
-					list = map.get(length);
-				} else {
-					list = new ArrayList<>();
-				}
-				list.add(lcs);
-				map.put(length, list);
+//				ArrayList<String> list;
+//				if (map.containsKey(length)) {
+//					list = map.get(length);
+//				} else {
+//					list = new ArrayList<>();
+//				}
+//				list.add(lcs);
+//				map.put(length, list);
 			}
 		}
-		System.out.println("Longest Consecutive Subsequences : " + map.get(longestSequenceLength));
+		// System.out.println("Longest Consecutive Subsequences : " +
+		// map.get(longestSequenceLength).get(longestSequenceLength));
 		return longestSequenceLength;
 	}
 }
