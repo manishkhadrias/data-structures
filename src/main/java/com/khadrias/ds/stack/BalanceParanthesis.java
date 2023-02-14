@@ -6,27 +6,18 @@ public class BalanceParanthesis {
 
 	public static boolean balance(String str) {
 
-		Stack<Character> s = new Stack<Character>();
+		Stack<Character> s = new Stack<>();
 
 		for (Character c : str.toCharArray()) {
 
 			if (c.equals('{') || c.equals('(') || c.equals('[')) {
 				s.push(c);
-			} else if (c.equals('}')) {
-				if (s.pop() == '{')
-					continue;
-				else
-					return false;
-			} else if (c.equals(')')) {
-				if (s.pop() == '(')
-					continue;
-				else
-					return false;
-			} else if (c.equals(']')) {
-				if (s.pop() == '[')
-					continue;
-				else
-					return false;
+			} else if (c.equals('}') && s.pop() != '{') {
+				return false;
+			} else if (c.equals(')') && s.pop() != '(') {
+				return false;
+			} else if (c.equals(']') && s.pop() != '[') {
+				return false;
 			}
 		}
 
